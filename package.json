@@ -2,13 +2,26 @@
   "name": "fullstack-sandbox",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
+  "author": "ben@seebenprogram.com",
+  "homepage": "https://github.com/BenRGarcia/fullstack-sandbox",
+  "license": "MIT License",
   "scripts": {
+    "start": "node server.js",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenRGarcia/fullstack-sandbox"
+  },
   "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "foundation-sites": "^6.4.4-rc1",
+    "sequelize": "^4.37.6",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
