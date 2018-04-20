@@ -22,5 +22,8 @@ app.use('/', express.static(path.join(__dirname, 'dist')))
 // Define path of RESTful API
 app.use('/api', apiRouter)
 
+// Wildcard redirect
+app.get('*', (req, res, next) => res.redirect(301, '/'))
+
 // Start server listening on port
 app.listen(PORT, () => console.log(`Express server listening at PORT ${PORT}`))
