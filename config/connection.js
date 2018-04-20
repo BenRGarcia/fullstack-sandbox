@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const keys = require('keys')
+const keys = require('./keys.js')
 
 const sequelize = new Sequelize({
   dialect: keys.db.dialect,
@@ -8,10 +8,5 @@ const sequelize = new Sequelize({
   password: keys.db.password,
   port: keys.db.port
 })
-
-sequelize
-  .authenticate()
-  .then(() => console.log('Connection has been established successfully.'))
-  .catch(err => console.error('Unable to connect to the database:', err))
 
 module.exports = sequelize
