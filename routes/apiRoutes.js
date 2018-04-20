@@ -1,11 +1,12 @@
 // Require dependencies
 const express = require('express')
 
+// Define router
 const apiRouter = express.Router()
 
 // For debugging
 apiRouter.use((req, res, next) => {
-  console.log(`${req.method} received at ${Date.now().toString()}`)
+  console.log(`${req.method} received at ${Date.now()}`)
   next()
 })
 
