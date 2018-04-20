@@ -36,3 +36,5 @@ const Users = sequelize.define('users', {
 Users.sync({ force: true })
   .then(() => console.log(`'Users' table has been created`))
   .catch(err => console.log(`Houston we have a problem:\n`, err))
+
+module.exports = Users
